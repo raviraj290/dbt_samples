@@ -12,6 +12,6 @@ models:
        +materialized: table
 
     reporting:
-       +materialized: view 
+       +materialized: table 
        
 
