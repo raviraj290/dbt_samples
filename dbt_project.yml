@@ -13,5 +13,11 @@ models:
 
     reporting:
        +materialized: table 
+
+clean-targets:
+       - "target"
+       - "dbt_packages"
+
+      
        
 
