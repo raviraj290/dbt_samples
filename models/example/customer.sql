@@ -1,4 +1,5 @@
 {{ config(materialized='table') }}
 
-select * from raw.GLOBALMART.customer
+select * from {{ source('dbt_samples','customer') }}
+
 

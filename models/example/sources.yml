@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: dbt_samples
+    database: RAW
+    schema: GLOBALMART
+    tables:
+      - name: customer
+      
