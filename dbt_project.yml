@@ -1,7 +1,17 @@
-name: 'my_test_project'
+name: 'globamart'
 version: '1.0.0'
 config-version: 2
 
 profile: 'default'
 
 model-paths: ["models"]
+
+models:
+  globalmart:
+    example:
+       +materialized: table
+
+    reporting:
+       +materialized: view 
+       
+
