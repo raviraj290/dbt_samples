@@ -6,4 +6,9 @@ sources:
     schema: GLOBALMART
     tables:
       - name: customer
-      
+        columns:
+          - name: C_CUSTKEY
+            tests:
+              - not_null
+              
+
