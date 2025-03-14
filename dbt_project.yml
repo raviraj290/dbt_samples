@@ -1,7 +1,29 @@
-name: 'my_test_project'
+# Project Metadata
+name: 'my_dbt_project'
 version: '1.0.0'
 config-version: 2
 
+# Profile Configuration
 profile: 'default'
 
+# File Paths
 model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+# Target Path
+target-path: "target"
+
+# Clean Targets
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+# Model Configurations
+models:
+  my_dbt_project:
+    # Applies to all models in the project
+    +materialized: view
