@@ -1,5 +1,5 @@
 # Project Metadata
-name: 'my_dbt_project'
+name: 'dbt_samples'
 version: '1.0.0'
 config-version: 2
 
@@ -24,6 +24,6 @@ clean-targets:
 
 # Model Configurations
 models:
-  my_dbt_project:
+  dbt_samples:
     # Applies to all models in the project
     +materialized: view
