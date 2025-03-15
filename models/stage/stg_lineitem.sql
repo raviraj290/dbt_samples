@@ -1,4 +1,5 @@
 {{
     config(materialized='table')
 }}
-select * from RAW.GLOBALMART.LINEITEM
+select * from {{ source('sierra','lineitem') }}
+

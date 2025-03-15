@@ -1,4 +1,6 @@
 {{
     config(materialized='table')
 }}
-select * from RAW.GLOBALMART.orders
+select * from {{ source('sierra','orders') }}
+
+

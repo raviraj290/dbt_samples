@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: siera
+    database: RAW
+    schema: GLOBALMART
+    tables:
+      - name: customer
+      - name: lineitem
+      - name: orders
+      
+
+  
