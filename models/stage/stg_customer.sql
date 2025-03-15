@@ -1,7 +1,7 @@
 {{
     config(materialized='table')
 }}
-select * from {{ source('sierra','customer') }}
+select * from {{ source('siera','customer') }}
 
 
 

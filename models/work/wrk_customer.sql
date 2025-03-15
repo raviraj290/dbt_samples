@@ -2,5 +2,6 @@
     config(materialzed='view')
 }}
 
-select * from {{ source('siera','customer')  }}
+select * from {{ ref('stg_customer')  }}
+
 
