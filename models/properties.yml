@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: stg_orders
+    description: "orders table data"
+    columns:
+      - name: O_CUSTKEY
+    tests:
+      - unique
+      - not_null
