@@ -1,5 +1,5 @@
 {{
     config(materialized='table')
 }}
-select * from {{ source('sierra','lineitem') }}
+select * from {{ source('siera','lineitem') }}
 
