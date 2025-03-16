@@ -10,3 +10,10 @@ models:
           - not_null:
               config: 
                 where: "O_ORDERSTATUS = 'O'"
+      - name: order_date
+        description: "Order date"
+        tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: "order_date >= '2022-01-01' and order_date <= '2022-12-31'"
+ 
