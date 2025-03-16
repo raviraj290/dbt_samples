@@ -1,4 +1,4 @@
 
 select * from {{ ref('stg_orders')}}
 
-where o_totalprice < 10000
+where o_totalprice < 10
