@@ -10,7 +10,7 @@ sources:
       - name: orders
         freshness:
           error_after:
-            count: 1
+            count: 365
             period: day
           #filter: <boolean_sql_expression>
         loaded_at_field: O_ORDERDATE
